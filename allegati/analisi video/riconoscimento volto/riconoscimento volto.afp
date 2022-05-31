@@ -1,0 +1,406 @@
+{
+   "Name" : "Amped FIVE Project",
+   "Version" : "3.0",
+   "Properties" : {
+      "Case" : "",
+      "Author" : "",
+      "Description" : "",
+      "Report Max Image Width" : 600,
+      "Report Min Image Width" : 0
+   },
+   "Chains" : [
+      {
+         "Name" : "Catena",
+         "Id" : 1,
+         "IsExpanded" : true,
+         "Level" : 1,
+         "Filters" : [
+            {
+               "Type" : "Video Loader",
+               "Id" : 1,
+               "Enabled" : true,
+               "Parameters" : {
+                  "File" : "Rapina al Supermercato, ma il cassiere ignora il ladr.mp4",
+                  "Video Engine" : "FFMS with Audio",
+                  "Color Range" : "From File",
+                  "Original File" : ""
+               }
+            },
+            {
+               "Type" : "Contrast Brightness",
+               "Id" : 2,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Contrast" : 43,
+                  "Brightness" : 47,
+                  "Mode" : "Linear",
+                  "Selection" : {
+                     "Type" : "Whole Image",
+                     "Input" : {
+                     }
+                  }
+               }
+            },
+            {
+               "Type" : "Bilinear Filter",
+               "Id" : 9,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Matrix 1" : [
+                     [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                     ],
+                     [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                     ],
+                     [
+                        0,
+                        0,
+                        1,
+                        0,
+                        0
+                     ],
+                     [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                     ],
+                     [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                     ]
+                  ],
+                  "Matrix 2" : [
+                     [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                     ],
+                     [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                     ],
+                     [
+                        0,
+                        0,
+                        1,
+                        0,
+                        0
+                     ],
+                     [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                     ],
+                     [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                     ]
+                  ],
+                  "Scale" : [
+                     1,
+                     1
+                  ],
+                  "Combination method" : "Norm",
+                  "Selection" : {
+                     "Type" : "Whole Image",
+                     "Input" : {
+                     }
+                  }
+               }
+            },
+            {
+               "Type" : "Exposure",
+               "Id" : 12,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Exposure" : 0,
+                  "Offset" : -0.01,
+                  "Recover" : 1,
+                  "Selection" : {
+                     "Type" : "Whole Image",
+                     "Input" : {
+                     }
+                  }
+               }
+            },
+            {
+               "Type" : "Crop",
+               "Id" : 15,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Selection" : {
+                     "Type" : "Static Region",
+                     "Input" : {
+                        "1095" : [
+                           17,
+                           107,
+                           101,
+                           109
+                        ]
+                     }
+                  }
+               }
+            },
+            {
+               "Type" : "Compare Original",
+               "Id" : 13,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Mode" : "Side-by-Side Horizontally",
+                  "Balance" : 0.5,
+                  "Gain" : 1,
+                  "Line Color" : "rgba(0, 0, 0, 0.000)",
+                  "Line Thickness" : 0
+               }
+            },
+            {
+               "Type" : "Spotlight",
+               "Id" : 14,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Contrast" : 50,
+                  "Brightness" : 47,
+                  "Shape" : "Round",
+                  "Selection Type" : "Inverted",
+                  "Selection" : {
+                     "Type" : "Static Region",
+                     "Input" : {
+                        "0" : [
+                           539,
+                           137,
+                           29,
+                           19
+                        ]
+                     }
+                  }
+               }
+            }
+         ]
+      }
+   ],
+   "ChainsTree" : [
+      {
+         "Name" : "Catena",
+         "Id" : 1,
+         "IsExpanded" : true,
+         "Level" : 1,
+         "Filters" : [
+            {
+               "Type" : "Video Loader",
+               "Id" : 1,
+               "Enabled" : true,
+               "Parameters" : {
+                  "File" : "Rapina al Supermercato, ma il cassiere ignora il ladr.mp4",
+                  "Video Engine" : "FFMS with Audio",
+                  "Color Range" : "From File",
+                  "Original File" : ""
+               }
+            },
+            {
+               "Type" : "Contrast Brightness",
+               "Id" : 2,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Contrast" : 43,
+                  "Brightness" : 47,
+                  "Mode" : "Linear",
+                  "Selection" : {
+                     "Type" : "Whole Image",
+                     "Input" : {
+                     }
+                  }
+               }
+            },
+            {
+               "Type" : "Bilinear Filter",
+               "Id" : 9,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Matrix 1" : [
+                     [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                     ],
+                     [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                     ],
+                     [
+                        0,
+                        0,
+                        1,
+                        0,
+                        0
+                     ],
+                     [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                     ],
+                     [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                     ]
+                  ],
+                  "Matrix 2" : [
+                     [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                     ],
+                     [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                     ],
+                     [
+                        0,
+                        0,
+                        1,
+                        0,
+                        0
+                     ],
+                     [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                     ],
+                     [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                     ]
+                  ],
+                  "Scale" : [
+                     1,
+                     1
+                  ],
+                  "Combination method" : "Norm",
+                  "Selection" : {
+                     "Type" : "Whole Image",
+                     "Input" : {
+                     }
+                  }
+               }
+            },
+            {
+               "Type" : "Exposure",
+               "Id" : 12,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Exposure" : 0,
+                  "Offset" : -0.01,
+                  "Recover" : 1,
+                  "Selection" : {
+                     "Type" : "Whole Image",
+                     "Input" : {
+                     }
+                  }
+               }
+            },
+            {
+               "Type" : "Crop",
+               "Id" : 15,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Selection" : {
+                     "Type" : "Static Region",
+                     "Input" : {
+                        "1095" : [
+                           17,
+                           107,
+                           101,
+                           109
+                        ]
+                     }
+                  }
+               }
+            },
+            {
+               "Type" : "Compare Original",
+               "Id" : 13,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Mode" : "Side-by-Side Horizontally",
+                  "Balance" : 0.5,
+                  "Gain" : 1,
+                  "Line Color" : "rgba(0, 0, 0, 0.000)",
+                  "Line Thickness" : 0
+               }
+            },
+            {
+               "Type" : "Spotlight",
+               "Id" : 14,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Contrast" : 50,
+                  "Brightness" : 47,
+                  "Shape" : "Round",
+                  "Selection Type" : "Inverted",
+                  "Selection" : {
+                     "Type" : "Static Region",
+                     "Input" : {
+                        "0" : [
+                           539,
+                           137,
+                           29,
+                           19
+                        ]
+                     }
+                  }
+               }
+            }
+         ]
+      }
+   ],
+   "Bookmarks" : [
+   ],
+   "BookmarksTree" : [
+   ],
+   "Notes" : "",
+   "Id" : 13,
+   "Position" : 1095
+}

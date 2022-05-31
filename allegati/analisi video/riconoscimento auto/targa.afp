@@ -1,0 +1,148 @@
+{
+   "Name" : "Amped FIVE Project",
+   "Version" : "3.0",
+   "Properties" : {
+      "Case" : "",
+      "Author" : "",
+      "Description" : "",
+      "Report Max Image Width" : 600,
+      "Report Min Image Width" : 0
+   },
+   "Chains" : [
+      {
+         "Name" : "Catena",
+         "Id" : 1,
+         "IsExpanded" : true,
+         "Level" : 1,
+         "Filters" : [
+            {
+               "Type" : "Video Loader",
+               "Id" : 1,
+               "Enabled" : true,
+               "Parameters" : {
+                  "File" : "Rapina al Supermercato, ma il cassiere ignora il ladr.mp4",
+                  "Video Engine" : "FFMS with Audio",
+                  "Color Range" : "From File",
+                  "Original File" : ""
+               }
+            },
+            {
+               "Type" : "Crop",
+               "Id" : 3,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Selection" : {
+                     "Type" : "Static Region",
+                     "Input" : {
+                        "1163" : [
+                           41,
+                           8,
+                           138,
+                           103
+                        ]
+                     }
+                  }
+               }
+            },
+            {
+               "Type" : "Contrast Brightness",
+               "Id" : 4,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Contrast" : -42,
+                  "Brightness" : 0,
+                  "Mode" : "Linear",
+                  "Selection" : {
+                     "Type" : "Whole Image",
+                     "Input" : {
+                     }
+                  }
+               }
+            },
+            {
+               "Type" : "Sobel",
+               "Id" : 5,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Direction" : "Gradient Magnitude",
+                  "Size" : 3,
+                  "Order" : 1,
+                  "Offset" : 0
+               }
+            }
+         ]
+      }
+   ],
+   "ChainsTree" : [
+      {
+         "Name" : "Catena",
+         "Id" : 1,
+         "IsExpanded" : true,
+         "Level" : 1,
+         "Filters" : [
+            {
+               "Type" : "Video Loader",
+               "Id" : 1,
+               "Enabled" : true,
+               "Parameters" : {
+                  "File" : "Rapina al Supermercato, ma il cassiere ignora il ladr.mp4",
+                  "Video Engine" : "FFMS with Audio",
+                  "Color Range" : "From File",
+                  "Original File" : ""
+               }
+            },
+            {
+               "Type" : "Crop",
+               "Id" : 3,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Selection" : {
+                     "Type" : "Static Region",
+                     "Input" : {
+                        "1163" : [
+                           41,
+                           8,
+                           138,
+                           103
+                        ]
+                     }
+                  }
+               }
+            },
+            {
+               "Type" : "Contrast Brightness",
+               "Id" : 4,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Contrast" : -42,
+                  "Brightness" : 0,
+                  "Mode" : "Linear",
+                  "Selection" : {
+                     "Type" : "Whole Image",
+                     "Input" : {
+                     }
+                  }
+               }
+            },
+            {
+               "Type" : "Sobel",
+               "Id" : 5,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Direction" : "Gradient Magnitude",
+                  "Size" : 3,
+                  "Order" : 1,
+                  "Offset" : 0
+               }
+            }
+         ]
+      }
+   ],
+   "Bookmarks" : [
+   ],
+   "BookmarksTree" : [
+   ],
+   "Notes" : "",
+   "Id" : 5,
+   "Position" : 1163
+}

@@ -1,0 +1,170 @@
+{
+   "Name" : "Amped FIVE Project",
+   "Version" : "3.0",
+   "Properties" : {
+      "Case" : "",
+      "Author" : "",
+      "Description" : "",
+      "Report Max Image Width" : 600,
+      "Report Min Image Width" : 0
+   },
+   "Chains" : [
+      {
+         "Name" : "Catena",
+         "Id" : 1,
+         "IsExpanded" : true,
+         "Level" : 1,
+         "Filters" : [
+            {
+               "Type" : "Video Loader",
+               "Id" : 1,
+               "Enabled" : true,
+               "Parameters" : {
+                  "File" : "Rapina al Supermercato, ma il cassiere ignora il ladr.mp4",
+                  "Video Engine" : "FFMS with Audio",
+                  "Color Range" : "From File",
+                  "Original File" : ""
+               }
+            },
+            {
+               "Type" : "Crop",
+               "Id" : 10,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Selection" : {
+                     "Type" : "Static Region",
+                     "Input" : {
+                        "0" : [
+                           43,
+                           12,
+                           169,
+                           112
+                        ]
+                     }
+                  }
+               }
+            },
+            {
+               "Type" : "Contrast Brightness",
+               "Id" : 7,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Contrast" : 12,
+                  "Brightness" : 0,
+                  "Mode" : "Linear",
+                  "Selection" : {
+                     "Type" : "Whole Image",
+                     "Input" : {
+                     }
+                  }
+               }
+            },
+            {
+               "Type" : "Correct Fisheye",
+               "Id" : 9,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Mapping function" : "Stereographic",
+                  "Focal Length" : 10,
+                  "Field of View" : 3,
+                  "Canvas Size" : 1,
+                  "Interpolation" : "Bicubic",
+                  "Focal Length Computation" : "Manual",
+                  "Points on Line 1" : [
+                  ],
+                  "Points on Line 2" : [
+                  ],
+                  "Points on Line 3" : [
+                  ],
+                  "Longitude Correction (degrees)" : 0,
+                  "Latitude Correction (degrees)" : 0,
+                  "Rotation (degrees)" : 0
+               }
+            }
+         ]
+      }
+   ],
+   "ChainsTree" : [
+      {
+         "Name" : "Catena",
+         "Id" : 1,
+         "IsExpanded" : true,
+         "Level" : 1,
+         "Filters" : [
+            {
+               "Type" : "Video Loader",
+               "Id" : 1,
+               "Enabled" : true,
+               "Parameters" : {
+                  "File" : "Rapina al Supermercato, ma il cassiere ignora il ladr.mp4",
+                  "Video Engine" : "FFMS with Audio",
+                  "Color Range" : "From File",
+                  "Original File" : ""
+               }
+            },
+            {
+               "Type" : "Crop",
+               "Id" : 10,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Selection" : {
+                     "Type" : "Static Region",
+                     "Input" : {
+                        "0" : [
+                           43,
+                           12,
+                           169,
+                           112
+                        ]
+                     }
+                  }
+               }
+            },
+            {
+               "Type" : "Contrast Brightness",
+               "Id" : 7,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Contrast" : 12,
+                  "Brightness" : 0,
+                  "Mode" : "Linear",
+                  "Selection" : {
+                     "Type" : "Whole Image",
+                     "Input" : {
+                     }
+                  }
+               }
+            },
+            {
+               "Type" : "Correct Fisheye",
+               "Id" : 9,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Mapping function" : "Stereographic",
+                  "Focal Length" : 10,
+                  "Field of View" : 3,
+                  "Canvas Size" : 1,
+                  "Interpolation" : "Bicubic",
+                  "Focal Length Computation" : "Manual",
+                  "Points on Line 1" : [
+                  ],
+                  "Points on Line 2" : [
+                  ],
+                  "Points on Line 3" : [
+                  ],
+                  "Longitude Correction (degrees)" : 0,
+                  "Latitude Correction (degrees)" : 0,
+                  "Rotation (degrees)" : 0
+               }
+            }
+         ]
+      }
+   ],
+   "Bookmarks" : [
+   ],
+   "BookmarksTree" : [
+   ],
+   "Notes" : "",
+   "Id" : 10,
+   "Position" : 760
+}

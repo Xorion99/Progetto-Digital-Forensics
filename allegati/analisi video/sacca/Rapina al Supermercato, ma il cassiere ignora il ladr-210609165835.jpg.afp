@@ -1,0 +1,216 @@
+{
+   "Name" : "Amped FIVE Project",
+   "Version" : "3.0",
+   "Properties" : {
+      "Case" : "",
+      "Author" : "",
+      "Description" : "",
+      "Report Max Image Width" : 600,
+      "Report Min Image Width" : 0
+   },
+   "Chains" : [
+      {
+         "Name" : "Catena",
+         "Id" : 1,
+         "IsExpanded" : true,
+         "Level" : 1,
+         "Filters" : [
+            {
+               "Type" : "Video Loader",
+               "Id" : 1,
+               "Enabled" : true,
+               "Parameters" : {
+                  "File" : "Rapina al Supermercato, ma il cassiere ignora il ladr.mp4",
+                  "Video Engine" : "FFMS with Audio",
+                  "Color Range" : "From File",
+                  "Original File" : ""
+               }
+            },
+            {
+               "Type" : "Crop",
+               "Id" : 46,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Selection" : {
+                     "Type" : "Static Region",
+                     "Input" : {
+                        "919" : [
+                           28,
+                           150,
+                           105,
+                           106
+                        ]
+                     }
+                  }
+               }
+            },
+            {
+               "Type" : "Contrast Brightness",
+               "Id" : 33,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Contrast" : 17,
+                  "Brightness" : 33,
+                  "Mode" : "Linear",
+                  "Selection" : {
+                     "Type" : "Whole Image",
+                     "Input" : {
+                     }
+                  }
+               }
+            },
+            {
+               "Type" : "Contrast Stretch",
+               "Id" : 35,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Mode" : "Intensity",
+                  "Sensitivity" : 0,
+                  "Selection" : {
+                     "Type" : "Whole Image",
+                     "Input" : {
+                     }
+                  }
+               }
+            },
+            {
+               "Type" : "Automatic Color Equalization",
+               "Id" : 37,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Method" : "Discrete Fourier Transform (DFT)",
+                  "Strength" : 5
+               }
+            },
+            {
+               "Type" : "Spotlight",
+               "Id" : 58,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Contrast" : 50,
+                  "Brightness" : 50,
+                  "Shape" : "Square",
+                  "Selection Type" : "Inverted",
+                  "Selection" : {
+                     "Type" : "Static Region",
+                     "Input" : {
+                        "918" : [
+                           50,
+                           64,
+                           34,
+                           21
+                        ]
+                     }
+                  }
+               }
+            }
+         ]
+      }
+   ],
+   "ChainsTree" : [
+      {
+         "Name" : "Catena",
+         "Id" : 1,
+         "IsExpanded" : true,
+         "Level" : 1,
+         "Filters" : [
+            {
+               "Type" : "Video Loader",
+               "Id" : 1,
+               "Enabled" : true,
+               "Parameters" : {
+                  "File" : "Rapina al Supermercato, ma il cassiere ignora il ladr.mp4",
+                  "Video Engine" : "FFMS with Audio",
+                  "Color Range" : "From File",
+                  "Original File" : ""
+               }
+            },
+            {
+               "Type" : "Crop",
+               "Id" : 46,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Selection" : {
+                     "Type" : "Static Region",
+                     "Input" : {
+                        "919" : [
+                           28,
+                           150,
+                           105,
+                           106
+                        ]
+                     }
+                  }
+               }
+            },
+            {
+               "Type" : "Contrast Brightness",
+               "Id" : 33,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Contrast" : 17,
+                  "Brightness" : 33,
+                  "Mode" : "Linear",
+                  "Selection" : {
+                     "Type" : "Whole Image",
+                     "Input" : {
+                     }
+                  }
+               }
+            },
+            {
+               "Type" : "Contrast Stretch",
+               "Id" : 35,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Mode" : "Intensity",
+                  "Sensitivity" : 0,
+                  "Selection" : {
+                     "Type" : "Whole Image",
+                     "Input" : {
+                     }
+                  }
+               }
+            },
+            {
+               "Type" : "Automatic Color Equalization",
+               "Id" : 37,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Method" : "Discrete Fourier Transform (DFT)",
+                  "Strength" : 5
+               }
+            },
+            {
+               "Type" : "Spotlight",
+               "Id" : 58,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Contrast" : 50,
+                  "Brightness" : 50,
+                  "Shape" : "Square",
+                  "Selection Type" : "Inverted",
+                  "Selection" : {
+                     "Type" : "Static Region",
+                     "Input" : {
+                        "918" : [
+                           50,
+                           64,
+                           34,
+                           21
+                        ]
+                     }
+                  }
+               }
+            }
+         ]
+      }
+   ],
+   "Bookmarks" : [
+   ],
+   "BookmarksTree" : [
+   ],
+   "Notes" : "",
+   "Id" : 58,
+   "Position" : 918
+}

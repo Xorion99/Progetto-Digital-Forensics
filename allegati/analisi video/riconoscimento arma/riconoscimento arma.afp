@@ -1,0 +1,166 @@
+{
+   "Name" : "Amped FIVE Project",
+   "Version" : "3.0",
+   "Properties" : {
+      "Case" : "",
+      "Author" : "",
+      "Description" : "",
+      "Report Max Image Width" : 600,
+      "Report Min Image Width" : 0
+   },
+   "Chains" : [
+      {
+         "Name" : "Catena",
+         "Id" : 1,
+         "IsExpanded" : true,
+         "Level" : 1,
+         "Filters" : [
+            {
+               "Type" : "Video Loader",
+               "Id" : 1,
+               "Enabled" : true,
+               "Parameters" : {
+                  "File" : "Rapina al Supermercato, ma il cassiere ignora il ladr.mp4",
+                  "Video Engine" : "FFMS with Audio",
+                  "Color Range" : "From File",
+                  "Original File" : ""
+               }
+            },
+            {
+               "Type" : "Contrast Brightness",
+               "Id" : 2,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Contrast" : -13,
+                  "Brightness" : 12,
+                  "Mode" : "Linear",
+                  "Selection" : {
+                     "Type" : "Whole Image",
+                     "Input" : {
+                     }
+                  }
+               }
+            },
+            {
+               "Type" : "Crop",
+               "Id" : 18,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Selection" : {
+                     "Type" : "Static Region",
+                     "Input" : {
+                        "208" : [
+                           150,
+                           70,
+                           68,
+                           61
+                        ]
+                     }
+                  }
+               }
+            },
+            {
+               "Type" : "Automatic Color Equalization",
+               "Id" : 26,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Method" : "Discrete Fourier Transform (DFT)",
+                  "Strength" : 5
+               }
+            },
+            {
+               "Type" : "Homomorphic Filter",
+               "Id" : 27,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Alpha" : 0.9,
+                  "Low Frequency Contrast" : 1.9,
+                  "High Frequency Contrast" : 1.5,
+                  "Gain (EV)" : 0
+               }
+            }
+         ]
+      }
+   ],
+   "ChainsTree" : [
+      {
+         "Name" : "Catena",
+         "Id" : 1,
+         "IsExpanded" : true,
+         "Level" : 1,
+         "Filters" : [
+            {
+               "Type" : "Video Loader",
+               "Id" : 1,
+               "Enabled" : true,
+               "Parameters" : {
+                  "File" : "Rapina al Supermercato, ma il cassiere ignora il ladr.mp4",
+                  "Video Engine" : "FFMS with Audio",
+                  "Color Range" : "From File",
+                  "Original File" : ""
+               }
+            },
+            {
+               "Type" : "Contrast Brightness",
+               "Id" : 2,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Contrast" : -13,
+                  "Brightness" : 12,
+                  "Mode" : "Linear",
+                  "Selection" : {
+                     "Type" : "Whole Image",
+                     "Input" : {
+                     }
+                  }
+               }
+            },
+            {
+               "Type" : "Crop",
+               "Id" : 18,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Selection" : {
+                     "Type" : "Static Region",
+                     "Input" : {
+                        "208" : [
+                           150,
+                           70,
+                           68,
+                           61
+                        ]
+                     }
+                  }
+               }
+            },
+            {
+               "Type" : "Automatic Color Equalization",
+               "Id" : 26,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Method" : "Discrete Fourier Transform (DFT)",
+                  "Strength" : 5
+               }
+            },
+            {
+               "Type" : "Homomorphic Filter",
+               "Id" : 27,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Alpha" : 0.9,
+                  "Low Frequency Contrast" : 1.9,
+                  "High Frequency Contrast" : 1.5,
+                  "Gain (EV)" : 0
+               }
+            }
+         ]
+      }
+   ],
+   "Bookmarks" : [
+   ],
+   "BookmarksTree" : [
+   ],
+   "Notes" : "",
+   "Id" : 18,
+   "Position" : 208
+}
